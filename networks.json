@@ -1,0 +1,15 @@
+{
+  "mainnet": {
+    "NFTItem": {
+      "address": "0xb49054664518BAC9330295Fc66ED5726eaFCDB15",
+      "startBlock": 35121082
+    }
+  },
+
+  "testnet": {
+    "NFTItem": {
+      "address": "0xb49054664518BAC9330295Fc66ED5726eaFCDB15",
+      "startBlock": 10366716
+    }
+  }
+}

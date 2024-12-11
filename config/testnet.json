@@ -1,0 +1,13 @@
+{
+    "network": "testnet",
+    "startBlock": "31285314",
+    "nftitem": {
+      "address": "0x0DfCd1875DF81Ee42815475942BB83101f957300"
+    },
+    "erc721marketplace": {
+      "address": "0x77700afc1183e520f6ce28e5ee95411cc88cf36b"
+    },
+    "erc1155marketplace": {
+      "address": "0x571e3b002ee611fb0fd240c0ca2c85b6dd4e7e33"
+    }
+  }

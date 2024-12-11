@@ -1,0 +1,13 @@
+{
+  "network": "mainnet",
+  "startBlock": "38107079",
+  "nftitem": {
+    "address": "0xb2cC2dFB88B9f43Eb61D185A93C655F89DB16f97"
+  },
+  "erc721marketplace": {
+    "address": "0x77700afc1183e520f6ce28e5ee95411cc88cf36b"
+  },
+  "erc1155marketplace": {
+    "address": "0x571e3b002ee611fb0fd240c0ca2c85b6dd4e7e33"
+  }
+}

@@ -1,0 +1,28 @@
+type Item @entity {
+  id: ID!
+  tokenID: BigInt!
+  tokenURI: String!
+  owner: User!
+  createdAt: BigInt!
+  updatedAt: BigInt!
+}
+
+type MetadataUpdateRecord @entity {
+  id: ID!
+  tokenID: BigInt!
+  actor: User!
+}
+
+type User @entity {
+  id: ID!
+  items: [Item!]! @derivedFrom(field: "owner")
+}
+
+type TransferHistory @entity {
+  id: ID!
+  txHash: ID!
+  tokenID: BigInt!
+  from: User!
+  to: User!
+  transferAt: BigInt!
+}

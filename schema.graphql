@@ -1,28 +1,22 @@
 type Item @entity {
   id: ID!
   tokenID: BigInt!
-  tokenURI: String!
   owner: User!
+  transactionHash: String!
   createdAt: BigInt!
   updatedAt: BigInt!
 }
 
-type MetadataUpdateRecord @entity {
-  id: ID!
-  tokenID: BigInt!
-  actor: User!
-}
-
 type User @entity {
   id: ID!
-  items: [Item!]! @derivedFrom(field: "owner")
+  itemsOwned: [Item!]!
 }
 
 type TransferHistory @entity {
   id: ID!
-  txHash: ID!
-  tokenID: BigInt!
-  from: User!
+  from: User
   to: User!
-  transferAt: BigInt!
+  tokenId: BigInt!
+  timestamp: BigInt!
+  transactionHash: String!
 }

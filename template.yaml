@@ -4,10 +4,10 @@ schema:
 dataSources:
   - kind: ethereum
     name: NFTItem
-    network: {{network}}
+    network: '{{network}}'
     source:
-      address: "{{nftitem.address}}"
-      abi: URC721
+      address: '{{erc721marketplace.address}}'
+      abi: NFTPresaleManager
       startBlock: {{startBlock}}
     mapping:
       kind: ethereum/events
@@ -17,9 +17,9 @@ dataSources:
         - Item
         - Owner
       abis:
-        - name: URC721
-          file: ./abis/URC721.json
+        - name: NFTPresaleManager
+          file: ./abis/NFTPresaleManager.json
       eventHandlers:
-        - event: Transfer(indexed address,indexed address,indexed uint256)
-          handler: handleTransfer
+        - event: NFTPurchased(indexed address,uint256)
+          handler: handlePurchase
       file: ./src/event.ts

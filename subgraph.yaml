@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: NFTItem
-    network: '{{network}}'
+    network: 'testnet'
     source:
-      address: '{{erc721marketplace.address}}'
+      address: '0xb15c844e85cb3f95AC89EecA3c508264a870Bd50'
       abi: NFTPresaleManager
-      startBlock: {{startBlock}}
+      startBlock: 43775250
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7

@@ -1,11 +1,6 @@
-import {tokenTransfer} from "./transfer";
-import {Transfer} from "../generated/NFTItem/URC721";
-// import {metadataUpdate} from "./metadata";
+import {tokenPurchase} from "./purchase";
+import { NFTPurchased } from '../generated/NFTItem/NFTPresaleManager';
 
-export function handleTransfer(event: Transfer): void {
-  tokenTransfer(event);
+export function handlePurchase(event: NFTPurchased): void {
+  tokenPurchase(event);
 }
-
-// export function handleUpdateMetadata(event: MetadataUpdate): void {
-//   metadataUpdate(event);
-// }

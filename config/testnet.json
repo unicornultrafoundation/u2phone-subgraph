@@ -1,7 +1,7 @@
 {
   "network": "testnet",
-  "startBlock": "44369160",
+  "startBlock": "44448420",
   "erc721marketplace": {
-    "address": "0x575795dE27ef82A3f61B456012666d32619691BE"
+    "address": "0x5f482F4B9eDC38E10DC2D02588E77462Ab003cF3"
   }
 }

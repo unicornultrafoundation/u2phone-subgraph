@@ -12,6 +12,8 @@ export function tokenPurchase(event: NFTPurchased): void {
   if (!buyer) {
     buyer = new User(buyerAddress);
     buyer.itemsOwned = [];
+    buyer.totalCommissionReceivedAmount = BigInt.fromU32(0);
+    buyer.totalCommissionPaidAmount = BigInt.fromU32(0);
   }
 
   // Create the new NFT (Item entity)

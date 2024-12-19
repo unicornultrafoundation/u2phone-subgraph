@@ -10,6 +10,8 @@ type Item @entity {
 type User @entity {
   id: ID!
   itemsOwned: [Item!]!
+  totalCommissionPaidAmount: BigInt!
+  totalCommissionReceivedAmount: BigInt!
 }
 
 type TransferHistory @entity {
@@ -19,4 +21,13 @@ type TransferHistory @entity {
   tokenId: BigInt!
   timestamp: BigInt!
   transactionHash: String!
+}
+
+type CommissionHistory @entity {
+  id: ID!
+  referrer: String!
+  buyer: String!
+  amount: BigInt!
+  transactionHash: String!
+  timestamp: BigInt!
 }

@@ -6,9 +6,9 @@ dataSources:
     name: NFTItem
     network: 'testnet'
     source:
-      address: '0x575795dE27ef82A3f61B456012666d32619691BE'
+      address: '0x5f482F4B9eDC38E10DC2D02588E77462Ab003cF3'
       abi: NFTPresaleManager
-      startBlock: 44369160
+      startBlock: 44448420
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -22,4 +22,6 @@ dataSources:
       eventHandlers:
         - event: NFTPurchased(indexed address,uint256)
           handler: handlePurchase
+        - event: ReferralCommissionPaid(indexed address,indexed address,uint256)
+          handler: handleCommissionPaid
       file: ./src/event.ts

@@ -22,4 +22,6 @@ dataSources:
       eventHandlers:
         - event: NFTPurchased(indexed address,uint256)
           handler: handlePurchase
+        - event: ReferralCommissionPaid(indexed address,indexed address,uint256)
+          handler: handleCommissionPaid
       file: ./src/event.ts

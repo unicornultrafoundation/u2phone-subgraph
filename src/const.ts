@@ -1,5 +1,5 @@
 import {Address} from "@graphprotocol/graph-ts";
 
 
-export const ContractAddress = "0x5b377cDcaaF1A45519b74CD4Ebdd51E9Fd28950F".toLowerCase()
+export const ContractAddress = "0xbf6f533Ac6f9E14C8A36519C2d53489Eb2d70f17".toLowerCase()
 

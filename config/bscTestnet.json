@@ -1,7 +1,7 @@
 {
   "network": "chapel",
-  "startBlock": "46626040",
+  "startBlock": "46663010",
   "erc721marketplace": {
-    "address": "0xD4F6acb05eAd15266F4011aB1268c906ca4f6De1"
+    "address": "0x47FD26a59a3f22f5d5191Cc1c832122038520aE1"
   }
 }
